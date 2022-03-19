@@ -1,0 +1,318 @@
+@import '../../pages/views/scss/varies';
+@import '../../pages/views/scss/mediaQueries';
+
+
+
+
+#container_title {
+    height: 12vh;
+
+    .title {
+        h2 {
+            margin: 2vh 0vw 2vh 2vw;
+            font-family: $Oswald;
+            font-size: 3rem;
+            color: $DANE_kulerMagenta-3-hex;
+            font-weight: bold;
+
+            @include xxl {
+                margin-left: 5vw;
+                font-size: 4em;
+            }
+            @include desktop2 {
+                 margin: 1vh 0vw 1vh 2vw;
+            }
+        }
+    }
+
+    .line {
+        border-left: solid $DANE_kulerMagenta-3-hex;
+        height: 8vh;
+    }
+
+    .title_2 {
+        margin-top: 1vh;
+        font-family: $Open;
+        margin-left: 1vw;
+        font-size: 1.5rem;
+        color: $oraculus_kuler_fases-5-hex;
+
+        @include xxl {
+            margin-left: 3vw;
+            font-size: 1.5rem;
+        }
+
+        @include desktop1 {
+            font-size: 1.5rem;
+        }
+
+        @include desktop2 {
+            font-size: 1rem;
+        }
+
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        padding: 0vh 2vw;
+    }
+}
+
+#container_logo {
+    height: 12vh;
+
+    img {
+        margin: 3vh 0vw;
+        width: 100%;
+        height: auto;
+        padding: 0vh 5vw;
+
+        @include xxl {
+            width: 100%;
+        }
+
+        @include desktop1 {
+            width: 100%;
+
+        }
+
+        @include desktop2 {
+            width: 100%;
+        }
+
+    }
+}
+
+#title_component {
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px gray;
+    background-color: $DANE_kulerMagenta-3-hex;
+
+    @include xxl {
+        margin-top: 2vh;
+    }
+
+    h2 {
+        font-family: $Oswald;
+        font-size: 2.5em;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    #icoTitle {
+        margin-right: 1vw;
+        width: 42px;
+        height: 42px;
+        background: transparent url('../layout/resources/ico_title.png');
+        background-position: 0px 0px;
+    }
+}
+
+.width_table {
+    width: 100%;
+    padding: 0vh 1vw;
+}
+
+#titleCalendar {
+    font-family: $Oswald;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: white;
+    background-color: $DANE_kulerMagenta-3-hex;
+}
+
+
+
+/* testing */
+
+
+
+#Subtitle_Component {
+    border-left: solid 2px $text_white;
+    padding-left: 1vw;
+}
+
+
+
+#icoDateStatus {
+    width: 42px;
+    height: 42px;
+    background: transparent url('../layout/resources/spriteIcosStates.png');
+    background-position: 0px -42*5px;
+    margin: 0 auto;
+}
+
+.titleCardIndicador {
+    font-family: $Roboto;
+    font-size: 1.5em;
+    color: $DANE_kulerMagenta-3-hex;
+    font-weight: bold;
+}
+
+.subTitleCardIndicador {
+    font-family: $Open;
+    font-size: 1.2em;
+}
+
+.backgroundFase {
+    background-color: $background_fase;
+    border-radius: 4px 0px 0px 4px;
+}
+
+@mixin colorFase ($colorFase) {
+    color: $colorFase !important;
+
+}
+
+.colorFase_recoleccion {
+    @include colorFase($oraculus_kuler_fases-1-hex);
+}
+
+.colorFase_procesamiento {
+    @include colorFase($oraculus_kuler_fases-2-hex);
+}
+
+.colorFase_analisis {
+    @include colorFase($oraculus_kuler_fases-3-hex);
+}
+
+.colorFase_difusion {
+    @include colorFase($oraculus_kuler_fases-4-hex);
+}
+
+.colorFase_accept {
+    @include colorFase($green);
+}
+
+.colorFase_alert {
+    @include colorFase($red);
+}
+
+#icoIndicator-recoleccion {
+    width: 64px;
+    height: 64px;
+    background: url('../layout/resources/spriteIcosFases.png');
+    background-position: 0px 0px;
+    margin: 0 auto;
+}
+
+#icoIndicator-procesamiento {
+    width: 64px;
+    height: 64px;
+    background: url('../layout/resources/spriteIcosFases.png');
+    background-position: 0px -64px;
+    margin: 0 auto;
+}
+
+#icoIndicator-analisis {
+    width: 64px;
+    height: 64px;
+    background: url('../layout/resources/spriteIcosFases.png');
+    background-position: 0px -64*2px;
+    margin: 0 auto;
+}
+
+#icoIndicator-difusion {
+    width: 64px;
+    height: 64px;
+    background: url('../layout/resources/spriteIcosFases.png');
+    background-position: 0px -64*3px;
+    margin: 0 auto;
+}
+
+.titleInformacionIndicador {
+    font-family: $Roboto;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    @include desktop2 {
+        font-size: 1.1rem;
+    }
+
+    @include desktop1 {
+        font-size: 1.5rem;
+    }
+}
+
+.periodoInformacionIndicador {
+    font-family: $Open;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: $DANE_kulerMagenta-3-hex;
+
+    @include desktop2 {
+        font-size: 1rem;
+    }
+
+    @include desktop1 {
+        font-size: 1.3rem;
+    }
+
+}
+
+.contenidoInformacionIndicador {
+    font-family: $Open;
+    font-size: 1rem;
+
+    @include desktop2 {
+        font-size: 0.8rem;
+    }
+
+    @include desktop1 {
+        font-size: 1rem;
+    }
+}
+
+.cifraInformacionIndicador {
+    font-family: $Oswald;
+    font-size: 3rem;
+    font-weight: bold;
+    color: $DANE_kulerMagenta-3-hex;
+
+    @include desktop2 {
+        font-size: 2.5rem;
+    }
+
+    @include desktop1 {
+        font-size: 3rem;
+    }
+
+
+}
+
+#graphContainer {
+    border-left: solid 1px gray;
+}
+
+#dataMilestoneContainer {
+    height: 10vh;
+}
+
+.positionTextMilestone {
+    position: relative;
+    bottom: 2vh;
+}
+
+#informationIcon {
+    width: 42px;
+    height: 42px;
+    background: transparent url('../layout/resources/spriteIcosStates.png');
+    background-position: 0px -42*8px;
+    margin: 0 auto;
+}
+
+.background_information {
+    background-color: $background_information;
+
+    p {
+        @include desktop2 {
+            font-size: 0.8rem;
+        }
+
+        @include desktop1 {
+            font-size: 1rem;
+        }
+
+    }
+}

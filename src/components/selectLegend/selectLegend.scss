@@ -1,0 +1,43 @@
+@import '../../pages/views/scss/varies';
+@import '../../pages/views/scss/mediaQueries';
+
+
+
+@mixin fases ($colorFase) {
+    background-color: $colorFase;
+    color: white;
+    margin-left: 1vw !important;
+    height: 3vh;
+    border-radius: 4px;
+
+    @include desktop2 {
+        height: 5vh;
+    }
+}
+
+.recoleccion {
+    @include fases ($oraculus_kuler_fases-1-hex);
+}
+
+.procesamiento {
+    @include fases ($oraculus_kuler_fases-2-hex);
+}
+
+.analisis {
+    @include fases ($oraculus_kuler_fases-3-hex);
+}
+
+.difusion {
+    @include fases ($oraculus_kuler_fases-4-hex);
+}
+
+.position_text-1 {
+    text-align: center;
+
+    span {
+        position: relative;
+        bottom: 0.8vh;
+        font-size: 1em;
+
+    }
+}

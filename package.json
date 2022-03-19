@@ -1,0 +1,62 @@
+{
+  "name": "oraculus",
+  "private": true,
+  "description": "Monitoreo de Operaciones Estadísticas",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop -H 0.0.0.0 -p 3001",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.2.1",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/styles": "^4.5.2",
+    "apollo-boost": "^0.4.4",
+    "babel-plugin-styled-components": "^1.10.6",
+    "d3": "^4.13.0",
+    "d3-jetpack": "^2.0.20",
+    "gatsby": "^2.13.71",
+    "gatsby-background-image": "^0.8.3",
+    "gatsby-plugin-apollo": "^0.1.1",
+    "gatsby-plugin-material-ui": "^2.1.6",
+    "gatsby-plugin-react-helmet": "^3.1.2",
+    "gatsby-plugin-react-svg": "^2.1.1",
+    "gatsby-plugin-sass": "^2.1.8",
+    "gatsby-plugin-sharp": "^2.2.10",
+    "gatsby-plugin-styled-components": "^3.1.11",
+    "gatsby-source-filesystem": "^2.1.6",
+    "gatsby-source-graphql": "^2.1.14",
+    "gatsby-transformer-csv": "^2.1.2",
+    "gatsby-transformer-remark": "^2.6.24",
+    "gatsby-transformer-sharp": "^2.2.6",
+    "graphql": "^14.5.8",
+    "graphql-tag": "^2.10.1",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-apollo": "^3.1.1",
+    "react-big-calendar": "^0.22.0",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-odometerjs": "^2.1.1",
+    "react-select": "^3.0.4",
+    "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
+    "modernizr": "^3.8.0",
+    "normalize.css": "^8.0.1",
+    "prettier": "^1.17.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

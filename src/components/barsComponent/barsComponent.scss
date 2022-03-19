@@ -1,0 +1,32 @@
+@import '../../pages/views/scss/varies';
+@import '../../pages/views/scss/mediaQueries';
+
+.title {
+  font: bold 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+.tooltip {
+  padding: 2vh 0vw;;
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  height: 28px;
+  font-family: $Roboto;
+  font-weight: bold;
+  background: #e2e3e5;
+  border: solid 2px #5d6164;
+  border-radius: 4px;
+  pointer-events: none;
+}

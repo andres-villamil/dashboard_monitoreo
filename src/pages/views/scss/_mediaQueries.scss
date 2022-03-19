@@ -1,0 +1,55 @@
+@mixin xxs {
+    @media #{$media-xxs} {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media #{$media-xs} {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media #{$media-sm} {
+        @content;
+    }
+}
+
+@mixin md {
+    @media #{$media-md} {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media #{$media-lg} {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media #{$media-xl} {
+        @content;
+    }
+}
+
+@mixin xxl {
+    @media #{$media-xxl} {
+        @content;
+    }
+}
+
+@mixin desktop1 {
+    @media #{$media-desktop_1600} {
+        @content;
+
+    }
+}
+
+@mixin desktop2 {
+    @media #{$media-desktop_1366} {
+        @content;
+
+    }
+}

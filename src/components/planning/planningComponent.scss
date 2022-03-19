@@ -1,0 +1,126 @@
+@import '../../pages/views/scss/varies';
+@import '../../pages/views/scss/mediaQueries';
+
+.date {
+    font-family: $Roboto;
+    font-weight: bold;
+    margin-left: 1vw;
+}
+
+.description {
+    font-family: $Open;
+    font-weight: 100;
+    padding: 0.5vh 1vw;
+}
+
+#TerminadoState {
+    width: 42px;
+    height: 42px;
+    background: url('../planning/resources/spriteIcosStates.png');
+    background-position: 0px -42*2px;
+
+}
+
+#AtrasadoState {
+    width: 42px;
+    height: 42px;
+    background: url('../planning/resources/spriteIcosStates.png');
+    background-position: 0px -42px;
+
+}
+
+#EnProcesoState {
+    width: 42px;
+    height: 42px;
+    background: url('../planning/resources/spriteIcosStates.png');
+    background-position: 0px 0px;
+}
+
+#SinEjecutarState {
+    width: 42px;
+    height: 42px;
+    background: url('../planning/resources/spriteIcosStates.png');
+    background-position: 0px -42*3px;
+}
+
+
+.mui-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: 0.5vw;
+}
+
+.mui-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.mui-col-xs-11 {
+    max-width: 80%;
+}
+
+.mui-col-xs-1 {
+    max-width: 20%;
+    margin-top: 1.5vh;
+}
+
+
+#tooltip.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 160px;
+    height: 60px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: #FFFFFF;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+
+    .ml-1 {
+        margin-left: 1vw;
+    }
+}
+
+@mixin colorFase ($procesamiento) {
+    background-color: $procesamiento;
+    border-radius: 5px;
+}
+
+.ColorProcesamiento {
+    @include colorFase(#456E7B);
+}
+
+.ColorRecoleccion {
+    @include colorFase(#FF9550);
+}
+
+.ColorAnálisis {
+    @include colorFase(#5B29AD);
+
+}
+
+.ColorDifusión {
+    @include colorFase(#FF3E7D);
+}
+
+.linkFase {
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
+
+.allElements {
+    padding: 1vh 0vw;
+    border-radius: 4px;
+    &:hover,
+    &:active {
+        background-color: #DEDEDE;
+    }
+}
+

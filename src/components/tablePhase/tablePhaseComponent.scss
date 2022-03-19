@@ -1,0 +1,320 @@
+@import '../../pages/views/scss/varies';
+@import '../../pages/views/scss/mediaQueries';
+
+table{
+    width: 100%;
+}
+
+th {
+    text-align: left;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    border-top: 4px #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #909090;
+
+
+
+}
+
+td {
+    font-weight: normal;
+    padding: 8px;
+    border-top: 4px #ccc;
+    border-bottom: 1px solid #ccc;
+
+}
+
+th.center,
+td.center {
+    text-align: left;
+
+}
+
+td.referentLink {
+    text-align: left;
+    color: #D1124F;
+    font-family: $Roboto;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+td.Recolección {
+    text-align: center;
+    Background-color: $oraculus_kuler_fases-1-hex;
+    width: 15%;
+    font-family: $Roboto;
+    font-weight: bold;
+        color: #FFFFFF;
+        border-radius: 4px;
+}
+
+td.Procesamiento {
+    text-align: left;
+    Background-color: $oraculus_kuler_fases-2-hex;
+    width: 15%;
+    font-family: $Roboto;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+
+
+td.Análisis {
+    text-align: center;
+    Background-color: $oraculus_kuler_fases-3-hex;
+    color: #FFFFFF;
+    width: 15%;
+    font-family: $Roboto;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+td.Difusión {
+    text-align: center;
+    Background-color: $oraculus_kuler_fases-4-hex;
+    color: #FFFFFF;
+    width: 15%;
+    font-family: $Roboto;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+th.num,
+td.num {
+    text-align: right;
+}
+
+#Recolección {
+    width: 24px;
+    height: 24px;
+    background: url('../tablePhase/resources/spriteIcos_fases.png');
+    background-position: 0px 0px;
+}
+
+#Procesamiento {
+    width: 24px;
+    height: 24px;
+    background: url('../tablePhase/resources/spriteIcos_fases.png');
+    background-position: 0px -24px;
+
+}
+
+#Análisis {
+    width: 24px;
+    height: 24px;
+    background: url('../tablePhase/resources/spriteIcos_fases.png');
+    background-position: 0px -24*2px;
+}
+
+#Difusión {
+    width: 24px;
+    height: 24px;
+    background: url('../tablePhase/resources/spriteIcos_fases.png');
+    background-position: 0px -24*3px;
+}
+
+#Atrasado {
+    background: url('../tablePhase/resources/alert_icon.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.referentLink a {
+    text-align: left;
+    color: #D1124F;
+    font-family: $Roboto;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.marginFaseTable{
+margin-left: 2vw;
+}
+
+
+//responsive styles
+
+th.des:after {
+    content: "\21E9";
+}
+
+th.aes:after {
+    content: "\21E7";
+}
+
+/* 
+  Max width before this PARTICULAR table gets nasty
+  This query will take effect for any screen smaller than 760px
+  and also iPads specifically.
+  */
+
+@media only screen and (min-width: 1200px) {
+
+    th {
+        text-align: left;
+        font-size: 13px;
+        font-weight: normal;
+        padding: 8px;
+        border-top: 4px #ccc;
+        border-bottom: 1px solid #ccc;
+        color: #909090;
+
+
+
+    }
+
+    td {
+        font-weight: normal;
+        padding: 8px;
+        border-top: 4px #ccc;
+        border-bottom: 1px solid #ccc;
+
+    }
+
+    th.center,
+    td.center {
+        text-align: left;       
+    }
+
+    td.referentLink {
+        text-align: left;
+        color: #D1124F;
+    }
+
+    td.Recoleccion {
+        text-align: center;
+        Background-color: $oraculus_kuler_fases-1-hex;
+        width: 15%;
+        color: #FFFFFF;
+        border-radius: 4px;
+    }
+
+    td.Procesamiento {
+
+        text-align: left;
+        Background-color: $oraculus_kuler_fases-2-hex;
+        width: 15%;
+        color: #FFFFFF;
+        border-radius: 4px;
+
+        border-radius: 4px;
+
+    }
+
+    td.Análisis {
+        text-align: center;
+        Background-color: $oraculus_kuler_fases-3-hex;
+        color: #FFFFFF;
+        border-radius: 4px;
+        width: 15%;
+    }
+
+    td.Difusión {
+        text-align: center;
+        Background-color: $oraculus_kuler_fases-4-hex;
+        color: #FFFFFF;
+        width: 15%;
+        border-radius: 4px;
+    }
+
+    th.num,
+    td.num {
+        text-align: right;
+    }
+
+    #Recoleccion {
+        width: 24px;
+        height: 24px;
+        background: url('../tablePhase/resources/spriteIcos_fases.png');
+        background-position: 0px 0px;
+    }
+
+    #Procesamiento {
+        width: 24px;
+        height: 24px;
+        background: url('../tablePhase/resources/spriteIcos_fases.png');
+        background-position: 0px -24px;
+
+    }
+
+    #Análisis {
+        width: 24px;
+        height: 24px;
+        background: url('../tablePhase/resources/spriteIcos_fases.png');
+        background-position: 0px -24*2px;
+    }
+
+    #Difusión {
+        width: 24px;
+        height: 24px;
+        background: url('../tablePhase/resources/spriteIcos_fases.png');
+        background-position: 0px -24*3px;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 768px) {
+
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    /*
+      Label the data
+      */
+    td:before {
+        content: attr(data-th) ": ";
+        font-weight: bold;
+        width: 6.5em;
+        display: inline-block;
+    }
+}
+
+@include desktop2 {
+    td a {
+        font-size: 0.8rem;
+    }
+}

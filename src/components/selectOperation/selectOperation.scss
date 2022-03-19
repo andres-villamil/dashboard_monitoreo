@@ -1,0 +1,49 @@
+@import '../../pages/views/scss/varies';
+@import '../../pages/views/scss/mediaQueries';
+
+
+.select_position-1 {
+    position: relative;
+    bottom: 3vh;
+
+    @include xxl {
+        bottom: 0vh;
+    }
+}
+
+
+#selectComponent {
+    .css-2b097c-container {
+        width: 20vw;
+        margin-top: 4.5vh;
+        border: 2px solid $DANE_kulerMagenta-3-hex !important;
+        border-radius: 4px;
+
+        @include desktop1 {
+            margin-top: 4.5vh !important;
+        }
+
+        @include desktop2 {
+            margin-top: 2vh !important;
+        }
+
+
+        &:hover,
+        &:active {
+            border: 2px solid $DANE_kulerMagenta-3-hex !important;
+        }
+
+    }
+
+    .css-tlfecz-indicatorContainer {
+        color: $DANE_kulerMagenta-3-hex !important;
+    }
+
+    .css-1okebmr-indicatorSeparator {
+        background-color: $DANE_kulerMagenta-3-hex !important;
+    }
+
+    .css-1wa3eu0-placeholder {
+        color: $DANE_kulerMagenta-3-hex !important;
+    }
+}

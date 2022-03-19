@@ -1,0 +1,21 @@
+@import '../../pages/views/scss/varies';
+@import '../../pages/views/scss/mediaQueries';
+
+.container_select {
+    height: 30vh;
+    margin-top: 5vh;
+}
+.select_position-1{
+    position: relative;
+    bottom: 3vh;
+    @include xxl{
+           bottom: 0vh;
+    }
+}
+
+.MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: 2px solid $DANE_kulerMagenta-3-hex !important;
+}
+.MuiInput-underline:active:not(.Mui-disabled):before {
+    border-bottom: 2px solid $DANE_kulerMagenta-3-hex !important;
+}

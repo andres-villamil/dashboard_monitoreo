@@ -1,0 +1,113 @@
+@import '../../pages/views/scss/varies';
+@import '../../pages/views/scss/mediaQueries';
+
+
+
+.titleCardIndicador {
+    font-family: $Roboto;
+    font-size: 1.3rem;
+    color: $DANE_kulerMagenta-3-hex;
+    font-weight: bold;
+    z-index: 0;
+
+    @include desktop1 {
+        font-size: 1.3rem;
+    }
+
+    @include desktop2 {
+        font-size: 0.9rem;
+    }
+}
+
+.subTitleCardIndicador {
+    font-family: $Open;
+    font-size: 1.1rem;
+    color: $text_black;
+
+    @include desktop1 {
+        font-size: 1rem;
+    }
+
+    @include desktop2 {
+        font-size: 0.8rem;
+    }
+
+}
+
+
+#dataMilestoneContainer {
+    height: 10vh;
+
+    @include desktop2 {
+        height: 15vh;
+    }
+}
+
+.heightPaper1 {
+    height: 8vh;
+
+    @include desktop2 {
+        height: 10vh;
+    }
+}
+
+.zindex {
+    z-index: 1;
+}
+
+.Terminado {
+    width: 42px;
+    height: 42px;
+    background: transparent url('../layout/resources/spriteIcosStates.png');
+    background-position: 0px -42*5px;
+    margin: 0vh auto -0.8vh;
+}
+
+.EnProceso {
+    width: 42px;
+    height: 42px;
+    background: transparent url('../layout/resources/spriteIcosStates.png');
+    background-position: 0px -42*6px;
+    margin: 0vh auto -0.8vh;
+
+}
+
+.Atrasado {
+    width: 42px;
+    height: 42px;
+    background: transparent url('../layout/resources/spriteIcosStates.png');
+    background-position: 0px -42*7px;
+    margin: 0vh auto -0.8vh;
+
+}
+
+
+
+@mixin iconCardFase($iconState) {
+    width: 42px;
+    height: 42px;
+    background: transparent url('../layout/resources/spriteIcosFasesSmall.png');
+    background-position: 0px $iconState;
+}
+
+#icoCardFase-Recoleccion {
+    @include iconCardFase(0px);
+}
+
+#icoCardFase-Procesamiento {
+    @include iconCardFase(-42px);
+}
+
+#icoCardFase-Análisis {
+    @include iconCardFase(-42*2px);
+}
+
+#icoCardFase-Difusión {
+    @include iconCardFase(-42*3px);
+}
+
+.styleDate {
+    color: $DANE_kulerMagenta-3-hex;
+    font-weight: bold;
+
+}

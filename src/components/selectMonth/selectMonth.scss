@@ -1,0 +1,39 @@
+@import '../../pages/views/scss/varies';
+@import '../../pages/views/scss/mediaQueries';
+
+#selectMonthComponent {
+    .css-2b097c-container {
+        margin-top: 1.5vh;
+        width: auto;
+        border: 2px solid #ffffff !important;
+        border-radius: 4px;
+
+        &:hover,
+        &:active {
+            border: 2px solid $DANE_kulerMagenta-3-hex !important;
+        }
+
+    
+    }
+
+    .css-tlfecz-indicatorContainer {
+        color: $DANE_kulerMagenta-3-hex !important;
+    }
+
+    .css-yk16xz-control {
+        border-color: white !important;
+    }
+
+    .css-1okebmr-indicatorSeparator {
+        background-color: #ffffff !important;
+    }
+
+    .css-1wa3eu0-placeholder {
+        color: $DANE_kulerMagenta-3-hex !important;
+    }
+
+    .css-1uccc91-singleValue {
+        font-family: $Roboto !important;
+        font-size: 1.5em !important;
+    }
+}

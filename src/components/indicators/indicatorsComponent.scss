@@ -1,0 +1,44 @@
+@import '../../pages/views/scss/varies';
+@import '../../pages/views/scss/mediaQueries';
+
+#icoIndicator-Recoleccion {
+    width: 64px;
+    height: 64px;
+    background: url('../layout/resources/spriteIcosFases.png');
+    background-position: 0px 0px;
+    margin: 0 auto;
+}
+
+#icoIndicator-Procesamiento {
+    width: 64px;
+    height: 64px;
+    background: url('../layout/resources/spriteIcosFases.png');
+    background-position: 0px -64px;
+    margin: 0 auto;
+}
+
+#icoIndicator-Análisis {
+    width: 64px;
+    height: 64px;
+    background: url('../layout/resources/spriteIcosFases.png');
+    background-position: 0px -64*2px;
+    margin: 0 auto;
+}
+
+#icoIndicator-Difusión {
+    width: 64px;
+    height: 64px;
+    background: url('../layout/resources/spriteIcosFases.png');
+    background-position: 0px -64*3px;
+    margin: 0 auto;
+}
+
+.alertNoData{
+    width: 100%;
+    padding: 5vh 0vw;
+    background-color: #F8D7DA;
+    border: solid 2px #C89499;
+    border-radius: 4px;
+    color: #C89499;
+    text-align: center;
+}
